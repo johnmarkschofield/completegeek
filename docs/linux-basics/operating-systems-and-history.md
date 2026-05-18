@@ -1,6 +1,8 @@
 # Operating Systems and Unix History and Culture
 
-FIXME/TODO: This should probably be eliminated as a chapter and the contents introduced when we encounter them.
+FIXME/TODO:
+* Maybe make this the first chapter?
+* Include some version of a unix family tree https://www.levenez.com/unix/ and https://en.wikipedia.org/wiki/History_of_Unix
 
 ## What is an Operating System?
 

@@ -1,5 +1,9 @@
 # Getting Help
 
+# FIXME:
+* apropos -s 1 list only works after an update
+* Confusing use of section in not man sections section.
+
 Nobody remembers everything. No matter how much you study this information, you'll forget some (most?) of it. What's important is to remember that the information exists, and be able to find it again. That includes this chapter -- you won't remember all of it, but please keep it handy so you can refer back to it.
 
 I'd strongly recommend you take ongoing notes about what you're learning, in a way that works for you -- a text file, a notes app, paper and pencil -- but take notes. This will be your first resource.
@@ -41,7 +45,7 @@ The header tells us this is the "touch" command. The number in parenthesis tells
 
 ### Man Page Synopsis
 
-Next we come to the synopsis. This gives us a very brief summary of the touch command and its options and arguments.
+Next we come to the synopsis. This gives us a very brief summary of the `touch` command and its options and arguments.
 
 ```bash
 SYNOPSIS
@@ -100,7 +104,9 @@ As our little poem said, mandatory arguments to long options are also mandatory 
 
 ## Additional man page sections
 
-Here we have an additional, and quite helpful section, "DATE STRING," that is not in every man page; this is specific to touch. DATE STRING explains exactly how to write a date string that `touch` will understand. Then we have author copyright, and bug reporting sections, all of which are fairly self-explanatory.
+Here we have an additional, and quite helpful section, "DATE STRING," that is not in every man page; this is specific to touch. DATE STRING explains exactly how to write a date string that `touch` will understand.
+
+Then we have **author**, **copyright**, and **bug reportin**g sections, all of which are fairly self-explanatory.
 
 ## Navigating around in man pages
 
@@ -121,7 +127,7 @@ Search may be a little confusing, so I'll walk you through a simple search:
 1. Hit `g` to move to the start of the man page
 2. Hit `/` to start searching
 3. Type `delete` and hit `[ENTER]` to search for "delete."
-4. Hit `n` to go to the next search match or `n` to go to the previous.
+4. Hit `n` to go to the next search match or `N` to go to the previous.
 
 Now I'll tell you the **best** news about these keystrokes. They're absolutely the same when you're viewing files in `less`. They're even the same keystrokes you'll use when you're editing files in `vi.` This is the essence of why I love Linux -- you build up skills in one place that you can leverage in a bunch of other places!
 
@@ -165,7 +171,7 @@ apropos -s 1 list
 
 You could leave out the "-s" option and it's argument, but it makes sense to limit the search to section 1. You'll get about 38 man pages, with "ls" right there in the middle.
 
-You can list all installed man pages from a particular section with `apropos -s 2 .` (The dot means "show me everything". )
+You can list all installed man pages from a particular section with `apropos -s 3 .` (The dot means "show me everything". )
 
 ## Info pages
 
@@ -208,6 +214,6 @@ You should refer back to this section next time you're figuring out a problem an
 3. I know you probably weren't taking notes. But you should really start!
 4. Is there a short version of the `ls` option `--author`?
 5. Who wrote the `printf` application?
-6. The `mkdir` man page shows you **two** other ways you can get help on `mkdir.` One of them is the info pages we talked about. What's the other?
+6. FIXME: This is a bad question. The `mkdir` man page shows you **three** other ways you can get help on `mkdir.` One of them is the info pages we talked about. What's the other?
 7. How should you report any bugs you find in the `find` program?
 8. The `date` command displays the current date. But it can also display any date you tell it to. Have it display the date on the West Coast of the USA (Pacific time zone) for next Tuesday at 4 PM.
