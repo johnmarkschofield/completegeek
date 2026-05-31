@@ -1,0 +1,23 @@
+{
+  "name": "CompleteGeek",
+  "image": "mcr.microsoft.com/devcontainers/python:latest",
+
+  "forwardPorts": [8000],
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "ms-python.python",
+        "davidanson.vscode-markdownlint"
+      ]
+    }
+  },
+
+  "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt",
+
+  "remoteUser": "vscode"
+}
